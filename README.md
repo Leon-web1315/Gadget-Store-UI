@@ -1,7 +1,7 @@
 # Gadget-Store-UI
 
-## demo
-
+## Demo
+![demo](demo.png)
 
 ## 概要
 ガジェット商品をカテゴリで絞り込めるシンプルなUIです。
