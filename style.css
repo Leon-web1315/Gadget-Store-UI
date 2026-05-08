@@ -1,0 +1,67 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.card {
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.card {
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#buttons {
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background: white;  
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button.active {
+    background: black;
+    color: white;
+}
+
+.card h3 {
+    font-size: 18px;
+}
+.card p {
+    font-weight: bold;
+}
+h1 {
+    margin-bottom: 10px;
+}
+#search {
+    margin-bottom: 10px;
+}
+#sort-low,#sort-high {
+    margin-bottom: 10px;
+}
+button:hover {
+    opacity: 0.8;
+}
