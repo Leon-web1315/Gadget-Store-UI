@@ -56,3 +56,12 @@ button.active {
 h1 {
     margin-bottom: 10px;
 }
+#search {
+    margin-bottom: 10px;
+}
+#sort-low,#sort-high {
+    margin-bottom: 10px;
+}
+button:hover {
+    opacity: 0.8;
+}
