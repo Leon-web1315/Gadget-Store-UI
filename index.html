@@ -2,10 +2,25 @@
 <html>
 <head>
     <title>Gadget Store</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="header">
     <h1>Gadget Store</h1>
+
+    <div class="header-buttons">
+
+        <button id="theme-toggle">
+            🌙 Dark Mode
+        </button>
+
+        <button id="cart-button">
+            🛒 Cart: <span id="cart-count">0</span>
+        </button>
+    </div>
+</div>
+    
 
     <input type="text" id="search" placeholder="検索．．．">
 
@@ -13,11 +28,50 @@
 
     <button id="sort-low">安い順</button>
     <button id="sort-high">高い順</button>
+    <button id="favorites-filter">
+        ❤お気に入り
+    </button>
 
     <p id="result-count"></p>
 
     <div id="product-list" class="grid"></div>
 
-    <script src="js/script.js"></script>
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+
+            <span id="close-modal">&times;</span>
+
+            <h2>Cart</h2>
+
+            <div id="cart-items"></div>
+            <p id="cart-total-item">0 items</p>
+            <p id="cart-total">Total: ¥0</p>
+
+            <button id="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+    </div>
+
+
+    <div id="toast">
+        ✓ Purchase Complete!
+    </div>
+
+
+    <div id="detail-modal" class="modal">
+        
+        <div class="modal-content">
+
+            <span id="close-detail">&times;</span>
+
+            <div id="detail-content"></div>
+
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
